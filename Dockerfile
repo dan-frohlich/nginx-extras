@@ -1,7 +1,7 @@
 FROM debian:stretch
 
 RUN apt-get update \
-  && apt-get install -y nginx-extras
+  && apt-get install -y nginx-extras \
   && rm -rf /var/lib/apt/lists/*
 
 # forward request and error logs to docker log collector
