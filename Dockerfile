@@ -1,6 +1,7 @@
 FROM debian:stretch
 
 RUN apt-get update \
+  && apt-get install -y procps \
   && apt-get install -y nginx-extras \
   && rm -rf /var/lib/apt/lists/*
 
